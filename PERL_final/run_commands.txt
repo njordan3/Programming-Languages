@@ -1,0 +1,8 @@
+./final.perl -h
+	(Should print the usage and exit)
+./final.perl --csv --tab -f myStocks.csv -g stockList.csv -o output.csv
+	(Should print an error since both --csv and --tab were given and exit)
+./final.perl --csv -f myStocks.csv -g stockList.csv -o output.csv
+./final.perl -f myStocks.csv -g stockList.csv -o output2.csv
+./final.perl --tab -f myStocks.dat -g stockList.dat -o output.dat
+	(Should make output files of the current delimiter)	

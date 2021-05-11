@@ -1,0 +1,12 @@
+Lines sorted by ID and filtered by ID with 2nd digit >= 7
+174,bambi,0,1,1,0,1,0,0,1,1,0
+578,flotsam,1,1,0,1,1,1,1,1,1,0
+688,hugo,0,0,1,0,0,1,0,0,1,0
+799,genie,0,1,1,0,0,1,1,0,1,1
+887,piglet,0,1,1,0,0,1,1,0,1,1
+985,jetsam,1,0,1,0,0,0,0,1,1,1
+
+Correct Counts:
+#1: 5   #2: 21   #3: 31   #4: 5   #5: 13   #6: 21   #7: 19   #8: 9   #9: 27   #10: 19   
+
+Question most answered correctly: #3

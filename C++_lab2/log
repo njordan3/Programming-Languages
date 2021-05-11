@@ -1,0 +1,11 @@
+
+Nicholas Jordan Lab02, Log file 
+===============================
+RangeError exception thrown, file: list.h, function: add, lineno: 55, index: 10
+RangeError caught in add, file: lab02.cpp, line: 60
+RangeError exception thrown, file: list.h, function: swap, lineno: 104, index: 11
+RangeError caught in swap, file: lab02.cpp, line: 79
+RangeError exception thrown, file: list.h, function: max, lineno: 124, index: 10
+RangeError caught in max, file: lab02.cpp, line: 89
+RangeError exception thrown, file: list.h, function: swap, lineno: 104, index: 11
+RangeError caught in swap, file: lab02.cpp, line: 102

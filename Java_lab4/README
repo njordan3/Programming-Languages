@@ -1,0 +1,31 @@
+
+The code in this directory assumes you are running JDK (Java Development Kit) 
+version 1.7 *OR ABOVE*. To verify, type at the command prompt:
+
+     java -version
+
+You should something see this:
+
+    java version "1.7.0"
+    Java(TM) SE Runtime Environment (build 1.7.0-b147)
+    Java HotSpot(TM) 64-Bit Server VM (build 21.0-b17, mixed mode)
+
+If not, see me or Steve for help.
+
+---------------------------------------------------------------------------
+How to execute Java code
+---------------------------------------------------------------------------
+
+* the filename of a java sourcefile will be the same as the class name
+* class names are upper case
+* To compile and run the Test class:
+
+  $ javac Test.java   - compiles the source for the Test class into bytecode 
+                       named Test.class  
+
+  $ java Test         - executes the bytecode in the Test class
+
+* Use the Makefile to compile everything in /Code/Java:
+
+  $ make
+

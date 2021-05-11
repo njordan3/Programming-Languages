@@ -1,0 +1,9 @@
+Text output with Formatter. 
+Primitives converted to strings: 
+boolean =     false 
+byte    =       114 
+short   =      1211 
+int     =   1234567 
+long    = 987654321 
+float   =   983.600 
+double  = -4.30e-15 

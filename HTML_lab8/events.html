@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Nichlas Jordan CMPS 3500 Lab08</title>
+        <style type="text/css">
+            body { margin : 5% 5% 5% 5%; background-size: cover;}
+        </style>
+
+        <script language="JavaScript">
+            // grab some information from the environment
+            var browser_name = navigator.appName;
+            var version = parseFloat(navigator.appVersion);
+
+            //================[Problem 1]================
+            var bg = [];
+            bg[0] = new Image();
+            bg[0].src = "./images/bg1.jpg";
+            bg[1] = new Image();
+            bg[1].src = "./images/bg2.jpg"; 
+            bg[2] = new Image();
+            bg[2].src = "./images/bg3.jpg"; 
+            bg[3] = new Image();
+            bg[3].src = "./images/bg4.jpg"; 
+
+            var bg_clicks = 0;
+            function changeBG() {
+                document.body.style.backgroundImage = `url('${bg[bg_clicks%4].src}')`;
+                bg_clicks++;
+            }
+            //================[Problem 2]================
+            var colors = [];
+            colors[0] = '#333333';
+            colors[1] = '#777777';
+            colors[2] = '#BBBBBB';
+            colors[3] = '#FFFFFF';
+            
+            var color_clicks = 0;
+            function changeColor() {
+                document.getElementById('upperDiv').style.backgroundColor = colors[color_clicks%4];
+                color_clicks++;
+            }
+            //================[Problem 3]================
+            function promptColorChange() {
+                var color = prompt('Enter a hex code to change my background color!', '#FFFFFF');   //default to white
+                document.getElementById('lowerDiv').style.backgroundColor = color;
+            }
+            //================[Problem 4]================
+            function display() {
+                document.getElementById('myArea').innerHTML = "Nicholas Jordan";
+            }
+        </script>
+    </head>
+    <body onload="window.document.bgColor='#FF33FF'" bgcolor="#FF33FF">
+        <div id="upperDiv" style="
+            background-color: #A0D0E0;
+            border-bottom: 4px solid #FFC600;
+            border-top: 4px solid #EFEFEF;
+            border-left: 4px dotted #EFEFEF;
+            border-right: 4px dotted #EFEFEF;
+            padding: 8px 10px 8px 10px;
+            width: 85%;">
+            <h3>Problems 1, 2, and 4</h3>
+            <form name="myForm">
+                <div id="myArea" style="background-color: #339363">Whose lab is this?</div>
+                <p>
+                    <b>Cycle through background images!</b>
+                    <input type="button" name="button2" value="set background to an image" onclick=changeBG()>
+                </p>    
+                <p>
+                    <b>Cycle through upperDiv's background colors!</b>
+                    <input type="button" name="button3" value="change div background color" onclick=changeColor()>
+                </p>    
+            </form>
+        </div>
+        <div id="textDiv"></div>
+        <div id="lowerDiv" style="background-color: #FFFFFF">
+        <h3>Problem 3 and 4</h3>
+        <p>
+            <b>Click me to change my background!</b>
+            <a href="#" onclick=promptColorChange()>
+                <img src="./images/bunny.gif" name="current" align="TOP" border="0">
+            </a> 
+        </p>
+        <p>
+            <b>Click me to display the developer's name in the green area above!</b>
+            <a href="#" onclick=display()>
+                <img src="./images/happy_face.gif" align="TOP" border="0">
+            </a>
+        </p>
+    </body>
+</html>

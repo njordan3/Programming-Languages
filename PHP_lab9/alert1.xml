@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<IDMEF-Message version="1.0">
+  <Alert messageid="1328">
+      <Node category="unknown">
+        <name>sumatra.cs.csubak.edu</name>
+      </Node>
+    <CreateTime ntpstamp="0xc8c6f7ba.0x9f0c996b">2006-09-29T01:39:06Z</CreateTime>
+    <AnalyzerTime ntpstamp="0xc8c6f7bb.0xa073de1">2006-09-29T01:39:07Z</AnalyzerTime>
+    </Analyzer>
+    <Source>
+      <Node category="unknown">
+        <Address category="ipv4-addr">
+          <address>136.168.201.112</address>
+        </Address>
+      </Node>
+    </Source>
+    <Target>
+      <Node category="unknown">
+        <Address category="ipv4-addr">
+          <address>136.168.201.111</address>
+        </Address>
+      </Node>
+      <Service ip_version="4">
+        <portlist>22-23,80,113,389,443</portlist>
+      </Service>
+    </Target>
+    <Classification text="(portscan) TCP Portscan">
+      <Reference origin="vendor-specific" meaning="sfportscan">
+        <name>(portscan) TCP Portscan</name>
+        <url>http://webopedia.internet.com/TERM/p/port_scanning.html</url>
+      </Reference>
+    </Classification>
+    <Assessment>
+      <Impact type="recon" severity="low">(portscan) TCP Portscan</Impact>
+    </Assessment>
+  </Alert>
+</IDMEF-Message>
